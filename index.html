@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prakash Ekatpure | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Library for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* General Styles */
+    body { font-family: 'Poppins', sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; transition: background 0.3s, color 0.3s; }
+    a { text-decoration: none; color: inherit; }
+    h2 { color:#007bff; margin-bottom:20px; border-bottom:2px solid #007bff; display:inline-block; padding-bottom:5px; }
+    section { max-width: 1000px; margin:60px auto; padding:0 20px; scroll-margin-top:70px; }
+
+    /* Header */
+    header { background:#007bff; color:#fff; padding:50px 20px; text-align:center; }
+    header h1 { font-size:2.8rem; margin:0; }
+    header p { margin-top:10px; font-size:1.2rem; }
+
+    /* Nav */
+    nav { text-align:center; background:#fff; padding:12px 0; box-shadow:0 2px 8px rgba(0,0,0,0.1); position: sticky; top:0; z-index:100; }
+    nav a { margin:0 18px; color:#007bff; font-weight:600; transition:0.3s; }
+    nav a:hover { color:#0056b3; }
+
+    /* Dark Mode Button */
+    .dark-toggle { position: fixed; top:20px; right:20px; background:#007bff; color:#fff; border:none; padding:10px 15px; border-radius:6px; cursor:pointer; z-index:200; transition:0.3s; }
+    .dark-toggle:hover { background:#0056b3; }
+
+    /* Cards */
+    .card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:25px; transition:transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,0.2); }
+    .card img { width:100%; border-radius:8px; margin-bottom:15px; }
+
+    /* Skills */
+    .skills-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:15px; }
+    .skill-item { background:#e0f0ff; padding:15px; border-radius:8px; text-align:center; font-weight:600; }
+
+    /* Dark Mode */
+    body.dark-mode { background:#121212; color:#eee; }
+    body.dark-mode header { background:#1f1f1f; }
+    body.dark-mode nav { background:#1f1f1f; }
+    body.dark-mode nav a { color:#80c0ff; }
+    body.dark-mode nav a:hover { color:#3399ff; }
+    body.dark-mode .card { background:#1e1e1e; box-shadow:0 4px 15px rgba(0,0,0,0.5); }
+    body.dark-mode .skill-item { background:#333; }
+
+    footer { text-align:center; padding:20px; background:#007bff; color:#fff; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+  <!-- Header -->
+  <header data-aos="fade-down">
+    <h1>Prakash Hariba Ekatpure</h1>
+    <p>Aspiring Data Scientist | Python, SQL, Power BI, Tableau</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
+
+  </nav>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>Hi, I’m Prakash Hariba Ekatpure from Warje, Pune. I am currently pursuing a Bachelor of Engineering in Computer Science from Sahyadri Valley College of Engineering and Technology, Rajuri. I’m an aspiring Data Scientist with hands-on experience in Excel, SQL, Power BI, Tableau, Python, and cloud-based data tools. Passionate about uncovering insights and building intelligent solutions through data.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education" data-aos="fade-left">
+    <h2>Education</h2>
+    <div class="card">
+      <strong>B.E. Computer Science</strong><br>
+      Sahyadri Valley College of Engineering and Technology, Rajuri (July 2022 – Present)<br>
+      CGPA: 7.74
+    </div>
+    <div class="card">
+      <strong>HSC (12th)</strong><br>
+      Sadashivrao Mane Vidyalaya, Akluj – 54%
+    </div>
+    <div class="card">
+      <strong>SSC (10th)</strong><br>
+      Srinath Vidyalaya, Borgaon – 88%
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-item">Advanced Excel</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">SQL</div>
+      <div class="skill-item">Power BI</div>
+      <div class="skill-item">Tableau</div>
+      <div class="skill-item">Machine Learning</div>
+    </div>
+    <h3>Soft Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-item">Communication</div>
+      <div class="skill-item">Logic Building</div>
+      <div class="skill-item">Problem Solving</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="card" data-aos="zoom-in">
+      <img src="https://i.imgur.com/x6A1u7r.png" alt="Smoke Detection Project Thumbnail">
+      <h3>🔥 Smoke Detection System using Arduino</h3>
+      <p>A safety-focused IoT project designed to detect smoke and fire within a specific range, helping prevent unwanted fire incidents. Real-time alerts via LED and buzzer.</p>
+      <ul>
+        <li><strong>Components:</strong> MQ-2 Sensor, LED, Buzzer, Arduino, Breadboard</li>
+        <li><strong>Language & Platform:</strong> C++, Arduino IDE</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" data-aos="fade-up">
+    <h2>Achievements & Certifications</h2>
+    <div class="card" data-aos="flip-left">
+      <h3>Data Science with Python Internship</h3>
+      <p>Pro Azure Software Solutions Pvt. Ltd. (Jan 1, 2025 – Feb 1, 2025). Learned Python, data analysis, and real-world data science applications.</p>
+    </div>
+    <div class="card" data-aos="flip-left" data-aos-delay="100">
+      <h3>Data Science Certification Program</h3>
+      <p>UpGrad Learning Centre, Kothrud (Currently Enrolled, 2025). Learning advanced data science concepts, visualization, machine learning, and cloud analytics.</p>
+    </div>
+  </section>
+
+  <!-- Contact --><section id="resume" data-aos="fade-up">
+  <h2>Resume</h2>
+  <div class="card">
+    <p>You can download my resume to learn more about my education, skills, projects, and achievements.</p>
+    <a href="files/Prakash_Ekatpure_Resume.pdf" download style="display:inline-block; padding:10px 20px; background:#007bff; color:#fff; border-radius:5px; text-decoration:none; font-weight:600;">📄 Download Resume</a>
+  </div>
+</section>
+
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div class="card">
+      <ul>
+        <li>Email: <a href="mailto:prakashekatpure45@gmail.com">prakashekatpure45@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/prakash-ekatpure" target="_blank">linkedin.com/in/prakash-ekatpure</a></li>
+        <li>GitHub: <a href="https://github.com/Prakash190" target="_blank">github.com/Prakash190</a></li>
+        <li>Location: Warje, Pune, Maharashtra, India</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    &copy; 2025 Prakash Hariba Ekatpure
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+
+    // Smooth scrolling
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
